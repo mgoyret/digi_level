@@ -4,9 +4,9 @@
  *  Created on: 15 sept. 2022
  *      Author: marco
  */
+//################################################################################################### archivo display.c
 #include "display.h"
 
-//################################################################################################### carpeta primitivas
 
 
 extern volatile struct digit digits_struct[DIGITOS]; // BUFFER
@@ -24,7 +24,6 @@ void display( float val )// val es la lectura de la IMU
 	  digits_struct[3].point = FALSE;
 }
 
-//################################################################################################### carpeta drivers
 
 void set_led(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState)
 {
